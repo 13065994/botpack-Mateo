@@ -15,7 +15,7 @@ module.exports = async ({ api }) => {
   const config = {
     autoRestart: {
       status: true,
-      time: 40,
+      time: 250,
       note: 'To avoid problems, enable periodic bot restarts',
     },
     greetings: [
@@ -78,7 +78,7 @@ module.exports = async ({ api }) => {
       });
     }, {
       scheduled: true,
-      timezone: "Asia/Manila"
+      timezone: "Africa/Lagos"
     });
   });
 
@@ -87,7 +87,7 @@ module.exports = async ({ api }) => {
       api.getThreadList(20, null, ['INBOX']).then((list) => {
         list.forEach((thread) => {
           if (thread.isGroup) {
-            api.sendMessage("🔃 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀\n━━━━━━━━━━━━━━━━━━\nBot is restarting...", thread.threadID).then(() => {
+            api.sendMessage("restarting...", thread.threadID).then(() => {
               console.log(`Restart message sent to thread`, 'Auto Restart');
             }).catch((error) => {
               console.log(`Error sending restart message to thread ${error}`, 'Auto Restart');
