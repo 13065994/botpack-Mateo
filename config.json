@@ -21,22 +21,19 @@
     "Info": "This section manages the bot's automatic package updates. To disable this function, set 'Package' to false. If you only want to exclude specific packages, set them to true and add them in the 'EXCLUDED' list."
   },
   "commandDisabled": [
-    "gptauto.js",
-    "gtpgo.js",
     "resend.js"
   ],
   "eventDisabled": [],
-  "OWNER": "OWNER OF BOT",
-  "BOTNAME": "BOTNAME HERE",
-  "PREFIX": "?",
+  "OWNER": "Gerald Max",
+  "BOTNAME": "》/《 •➣ ❲ 𝙈𝘼𝙏𝙀𝙊 𝘾𝙃𝘼𝙏𝘽𝙊𝙏 ❳⫷⫸࿐",
+  "PREFIX": "/",
   "ADMINBOT": [
-    "UID HERE ADMIN",
     ""
   ],
   "DESIGN": {
-    "Title": "BOTPACK",
-    "Theme": "BLUE",
-    "Admin": "FIXED BY JONELL",
+    "Title": "BOTPACK-MATEo",
+    "Theme": "Aqua",
+    "Admin": "Ge ra ld ツ",
     "Setup": {
       "Info": "Design your own custom terminal Titlebar for the title and must contain no numbers",
       "Theme": "Customize your console effortlessly with various theme colors. Explore Aqua, Fiery, Blue, Orange, Pink, Red, Retro, Sunlight, Teen, Summer, Flower, Ghost, Purple, Rainbow, and Hacker themes to enhance your terminal logs."
@@ -48,8 +45,8 @@
   "FCAOption": {
     "forceLogin": false,
     "listenEvents": true,
-    "autoMarkDelivery": false,
-    "autoMarkRead": false,
+    "autoMarkDelivery": true,
+    "autoMarkRead": true,
     "logLevel": "error",
     "selfListen": false,
     "online": true,
